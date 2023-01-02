@@ -4,7 +4,9 @@
   "description": "Web con TaildWind",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss ./src/tailwind/styles.css -o ./css/styles.css",
+    "w-build": "tailwindcss ./src/tailwind/styles.css -o ./css/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/fsr1410/web-tailwind/issues"
   },
-  "homepage": "https://github.com/fsr1410/web-tailwind#readme"
+  "homepage": "https://github.com/fsr1410/web-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20"
+  }
 }
